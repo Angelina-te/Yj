@@ -1,0 +1,51 @@
+#1
+
+Console.WriteLine(" Возвести numberA в степеь числа numberB");
+
+int Exponentiation(int numberA, int numberB)
+{
+  int result = 1;
+  for(int i=1; i <= numberB; i++){
+    result = result * numberA;
+  }
+    // int result = Math.Pow(numberA, numberB);
+    return result;
+}
+ Console.Write("Введи число A: ");
+  int numberA = Convert.ToInt32(Console.ReadLine());
+  Console.Write("Введи число B: ");
+  int numberB = Convert.ToInt32(Console.ReadLine());
+
+  int exponentiation = Exponentiation(numberA, numberB);
+  Console.WriteLine("Вывод: " + exponentiation);
+  
+  
+  
+  
+  
+  
+  
+  #2
+  
+  
+  
+  Console.WriteLine(" Выдаёт сумму цифр в заданном числе");
+Console.Write("Введите число A: ");
+int numberN = Convert.ToInt32(Console.ReadLine());
+
+  int SumNumber(int numberN){
+    
+    int counter = Convert.ToString(numberN).Length;
+    int advance = 0;
+    int result = 0;
+
+    for (int i = 0; i < counter; i++){
+      advance = numberN - numberN % 10;
+      result = result + (numberN - advance);
+      numberN = numberN / 10;
+    }
+   return result;
+  }
+
+int sumNumber = SumNumber(numberN);
+Console.WriteLine("Сумма равна: " + sumNumber);
