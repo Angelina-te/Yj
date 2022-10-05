@@ -1,11 +1,26 @@
-<Project Sdk="Microsoft.NET.Sdk">
+//Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>домашняя_работа</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+//a = 5; b = 7 -> max = 7
+//a = 2 b = 10 -> max = 10
+//a = -9 b = -3 -> max = -3
 
-</Project>
+
+Console.Write("Введите numberA ");
+int numberA = Convert.ToInt32 (Console.ReadLine());
+Console.Write("Введите numberB ");
+int numberB = Convert.ToInt32 (Console.ReadLine());
+int max = numberA;
+if(numberB > max)
+{
+     Console.WriteLine("numberB=max");
+
+}
+else
+{
+     Console.WriteLine("numberA=max");
+}
+
+
+Введите numberA 5
+Введите numberB 7
+numberB=max
